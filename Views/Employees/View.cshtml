@@ -1,0 +1,30 @@
+﻿@model SimpleCrudApp.Models.UpdateEmployeeViewModel
+
+@{}
+
+<div class="col-6">
+    <h1 class="m-3">Edit employee</h1>
+    <form method="post" action="View">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Id" asp-for="Id" readonly >
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Name" asp-for="Name">
+        </div>
+        <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="email@mail.com" asp-for="Email">
+        </div>
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" placeholder="Salary" asp-for="Salary">
+        </div>
+        <div class="input-group mb-3">
+            <input type="date" class="form-control" placeholder="Date Of Birth" asp-for="DateOfBirth">
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Depertment" asp-for="Department">
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button> 
+        <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Employees">Delete</button>
+    </form>
+    
+</div>
